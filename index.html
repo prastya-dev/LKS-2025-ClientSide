@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1000,height=600 initial-scale=1.0">
+    <title>game </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menuu">
+        <div class="menu">
+            <img src="Sprites/shooter.png" alt="" class="icon">
+            <form id="gameForm" oninput="startBtn.disabled = !this.checkValidity() || level.value === ''">
+                <input type="text" placeholder="Input username" class="boxIn" required>
+                <select name="level" id="" class="boxIn">
+                    <option value="" disabled selected>SELECT LEVEL</option>
+                    <option value="eazy">EAZY</option>
+                    <option value="medium">MEDIUM</option>
+                    <option value="hard">HARD</option>
+                </select>
+                <div class="con2">
+                    <div class="gun1">
+                        <img src="Sprites/gun1.png" alt="" class="imagess">
+                        <input type="radio" required name="gun" value="gun1">
+                    </div>
+                    <div class="gun1">
+                        <img src="Sprites/gun2.png" alt="" class="imagess">
+                        <input type="radio" required name="gun" value="gun2">
+                    </div>
+                </div>
+                <div class="con2">
+                    <div class="gun1">
+                        <img src="Sprites/target1.png" alt="" class="imagess">
+                        <input type="radio" required name="point" value="target1">
+                    </div>
+                    <div class="gun1">
+                        <img src="Sprites/target2.png" alt="" class="imagess">
+                        <input type="radio" required name="point" value="target2">
+                    </div>
+                    <div class="gun1">
+                        <img src="Sprites/target3.png" alt="" class="imagess">
+                        <input type="radio" required name="point" value="target3">
+                    </div>
+                </div>
+
+                <div class="butt">
+                    <button id="startBtn" type="submit" class="button" disabled>START GAME</button>
+                    <div class="button inst" id="inss">INSTRUCTION</div>
+                </div>
+            </form>
+        </div>
+        <div class="menu instruc none">
+            <div class="back">
+                <h1>X</h1>
+            </div>
+        </div>
+    </div>
+    <div class="game">
+        <div class="container2">
+            <div class="top">
+               <h1 class="nameplayer">PLAYER NAME</h1>
+               <h1 class="scoreplayer">SCORE : <span class="scoree">00</span>
+               </h1>
+               <h1 class="timeplayer">TIME: 00:00</h1>
+            </div>
+
+            <div class="gunn bg"></div>
+            <div class="pointerr bg"></div>
+            <div class="boom"></div>
+            <div class="divtarget debug">
+            <div class="target target1"></div>
+            <div class="target target2 "></div>
+            <div class="target target3 "></div>
+            </div>
+
+        </div>
+        <div class="score">
+            <h1 class="sub">LEADERBOARD</h1>
+            <select name="" id="" class="listt">
+                <option value="1" selected>Short by score</option>
+            </select>
+            <div class="listscore">
+                <div class="nama">
+                    <h5>Nama</h1>
+                    <h6>Score</h2>
+                </div>
+                <div class="buttlist">
+                        <h6>Detail</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="sc.js"></script>
+</body>
+</html>

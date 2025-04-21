@@ -1,0 +1,344 @@
+*{
+box-sizing: border-box;
+text-decoration: none;
+margin: 0;
+padding: 0;
+}
+    body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.debug{
+    border: 1px solid red;
+}
+.container{
+    display:flex;
+    width: 1000px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px -2px #0000003b;
+}
+.menuu{
+    display:none;
+
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px -2px #0000003b;
+}
+.game{
+   display: flex;
+   width: 100%;
+   height: 100%;
+  
+}
+.container2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+   width: 85%;
+   height: 100%;
+    background: url("Sprites/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: none;
+    
+}
+.top{
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: #0000007e;
+    
+}
+
+.top h1{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    color: #fff;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 30%;
+    border-radius: 7px;
+    background-color: #e7e7e7;
+    padding: 1rem;
+}
+.icon{
+    width: 150px;
+    height: 120px;
+}
+
+
+.boxIn{
+    width: 100%;
+    height: 2rem;
+    border: 3px solid #777777;
+    border-radius: 10px;
+    background-color: #b8b8b8;
+    padding: 0.2rem;
+    color: #777777;
+    margin-top: 0.5rem;
+}
+.imagess{
+    height: 3rem;
+    width: 3rem;
+    margin-bottom:0.2rem;
+}
+.con2{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+}
+
+.gun1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+.butt{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+.con2 input{
+    cursor: pointer;
+}
+option{
+    color: #fff;
+    font-weight: bold;
+    background-color: #353535;
+}
+option:disabled{
+    color: #777777;
+    background-color: #b8b8b8;
+}
+.button{
+    width: 45%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #0f7725;
+    color: #e7e7e7;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin: 0.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.button:disabled{
+    filter: brightness(50%);
+    pointer-events: none;
+}
+.button:hover{
+    filter: brightness(80%);
+}
+.inst{
+    background-color: #5f3d3d;
+}
+
+.none{
+    display: none;
+}
+
+.instruc{
+    margin: 1rem;
+    width: 50% ;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.back
+{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: end;
+    padding: 1rem;
+}
+.back h1{
+font-size: 30px;
+font-weight: bold;
+user-select: none;
+font-family: 'Arial';
+color: #791818;
+}
+
+
+
+
+
+.score{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    background-color: #000;
+    /* padding:; */
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.score .sub{
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.listt{
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    margin-top: 0.5rem;
+    background-color: #e7e7e7;
+    color: #000;
+    border-radius: 4px;
+    font-size: 10px;
+    border: none;
+}
+
+.listscore{
+    display: flex;
+    width: 100%;
+    height: rem;
+    border-bottom: 1px solid #fff;
+    justify-content: center;
+    align-items: center;
+}
+.nama{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #fff;
+    height: 70%;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.nama h6{
+    font-style: italic;
+}
+
+    
+.buttlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 3px;
+width: 30%;
+height: 60%;
+background-color: #e2cc00;
+}
+
+.bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.divtarget{
+    display: block;
+    position: inherit;
+    width: 80%;
+    height: 60%;
+     
+}
+
+/* /item gerakk =======================*/
+.gunn{
+    display: block;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 14rem;
+    /* background: url("Sprites/gun1.png"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 25;
+    
+   
+    
+}
+.pointerr{
+    display: block;
+    bottom: 50%;
+    left: 50%;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("Sprites/pointer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 24;
+}
+.target{
+    display: block;
+    /* bottom: 50%; */
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    /* background: url("Sprites/pointer.png"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 20;
+    
+}
+
+.target1{
+ left: 10px;
+}
+.target2{
+ left: 70px;
+}
+.target3{
+ left: 300px;
+}
+.boom{
+    display: none;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: url("Sprites/boom.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 23;
+    
+}
+
+/* ============================== */
+.boom, .pointerr {
+    pointer-events: none;
+  }
+  
+
+
